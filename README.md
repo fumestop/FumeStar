@@ -1,6 +1,6 @@
 # FumeStar
 
-[![ci/gh-actions/ruff](https://github.com/FumeStop/FumeStar/actions/workflows/ruff.yml/badge.svg)](https://github.com/FumeStop/FumeStar/actions/workflows/ruff.yml)
+[![ci/gh-actions/lint](https://github.com/FumeStop/FumeStar/actions/workflows/lint.yml/badge.svg)](https://github.com/FumeStop/FumeStar/actions/workflows/lint.yml)
 
 > Community management bot for the FumeStop ecosystem.
 
