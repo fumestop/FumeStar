@@ -7,22 +7,22 @@ authors = [
     { name="Sayan Bhattacharyya", email="sayan@sn1f3rt.dev" },
 ]
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 dependencies = [
-    "aiomysql>=0.2.0",
-    "click>=8.1.7",
-    "discord-py[speed]>=2.4.0",
+    "aiomysql==0.3.2",
+    "click==8.4.1",
+    "discord-py[speed]==2.7.1",
 ]
 
 [project.optional-dependencies]
 speed = [
-    "uvloop>=0.21.0",
+    "uvloop==0.22.1",
 ]
 
-[tool.uv]
-dev-dependencies = [
-    "pre-commit>=4.0.1",
-    "ruff>=0.8.3",
+[dependency-groups]
+dev = [
+    "pre-commit==4.6.0",
+    "ruff==0.15.15",
 ]
 
 [tool.ruff]

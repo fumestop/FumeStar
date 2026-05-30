@@ -161,4 +161,3 @@ cython_debug/
 
 # FumeStar
 config.py
-uv.lock
