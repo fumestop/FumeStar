@@ -76,7 +76,7 @@ class FumeStar(commands.AutoShardedBot):
 
         await self.tree.sync(guild=discord.Object(id=self.config.COMMUNITY_GUILD_ID))
 
-        self.log.info("FumeStop is ready.")
+        self.log.info("FumeStar is ready.")
 
     async def on_message(self, message: discord.Message) -> None:
         if message.author.bot:
