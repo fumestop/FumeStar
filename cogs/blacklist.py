@@ -17,11 +17,10 @@ from utils.db import (
     remove_blacklisted_user,
     remove_blacklisted_guild,
 )
+from utils.config import Config
 
-from config import COMMUNITY_GUILD_ID
 
-
-@app_commands.guilds(COMMUNITY_GUILD_ID)
+@app_commands.guilds(Config.COMMUNITY_GUILD_ID)
 class Blacklist(
     commands.GroupCog,
     group_name="blacklist",

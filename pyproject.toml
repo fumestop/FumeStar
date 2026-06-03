@@ -12,6 +12,7 @@ dependencies = [
     "aiomysql==0.3.2",
     "click==8.4.1",
     "discord-py[speed]==2.7.1",
+    "python-dotenv==1.2.2",
 ]
 
 [project.optional-dependencies]

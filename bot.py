@@ -12,7 +12,7 @@ import aiomysql
 import discord
 from discord.ext import tasks, commands
 
-import config
+from utils.config import Config
 
 
 class FumeStar(commands.AutoShardedBot):
@@ -88,7 +88,7 @@ class FumeStar(commands.AutoShardedBot):
             )
 
     async def start(self, **kwargs) -> None:
-        await super().start(config.TOKEN, reconnect=True)
+        await super().start(Config.TOKEN, reconnect=True)
 
     async def close(self) -> None:
         await super().close()
@@ -99,7 +99,7 @@ class FumeStar(commands.AutoShardedBot):
 
     @property
     def config(self):
-        return __import__("config")
+        return Config
 
     @property
     def embed_color(self) -> int:
